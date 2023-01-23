@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCode - University | Inserir Notas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="./assets/css/cadastra_cliente.css">
+    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="./assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="./assets/css/cadastro_produto.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="./assets/img/logo_admin.png" alt="Logo Doguito" class="cabecalho__logo" style="width:4.5rem;">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">                
+                <li class="cabecalho__link"><a href="#">SAIR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <div>
+            <h1>Olá <span class="nome_cadastro" id="pessoa_cadastro">Marina Bastos</span></h1>
+            
+            <h1>Insira no formulário a disciplina e a nota para o aluno:</h1>
+            <h1 class="pessoa_target" id="Aluno">JOÃO</h1>
+        </div>
+        <div class="principal">
+            <div class="mochila"></div>
+            <form action="" class="adicionar" id="novoItem">
+                <select name="Semestre" id="Semestre">
+                    <option value="Semestre">Primeiro Semestre</option>
+                    <option value="Semestre">Segundo Semestre</option>
+                </select>
+                <label for="materia">Materia</label>
+                <input type="text" name="materia" id="materia">
+                <label for="Nota">Nota</label>
+                <input type="text" name="nota" id="nota">
+                
+                <input type="submit" value="Adicionar" class="cadastrar" id="cadastrar">
+            </form>
+        </div>
+        <div>
+            <ul class="lista" id="lista"></ul>
+        </div>
+        
+    </main>
+
+    <script src="./js/lista.js"></script>
+</body>
+</html>
